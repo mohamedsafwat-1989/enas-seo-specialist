@@ -1,0 +1,147 @@
+/* roboto-slab-100 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/roboto-slab-v36-latin-100.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-200 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/roboto-slab-v36-latin-200.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-300 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/roboto-slab-v36-latin-300.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-slab-v36-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-slab-v36-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/roboto-slab-v36-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-slab-v36-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/roboto-slab-v36-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-900 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/roboto-slab-v36-latin-900.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --bg-color: #141414;
+  --main-text-color:               
+;
+}
+html,
+body {
+  scroll-behavior: smooth !important;
+}
+body {
+  background-color: var(--bg-color);
+  color: white;
+  font-family: "Roboto Slab";
+}
+
+/*Navbar styles*/
+.navbar {
+  .navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  .nav-link {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #fff;
+  }
+}
+@keyframes text-pulse {
+  0% {
+    text-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
+    opacity: 0.9;
+  }
+  50% {
+    text-shadow:
+      0 0 20px rgba(0, 210, 255, 0.8),
+      0 0 30px rgba(0, 210, 255, 0.4);
+    opacity: 1;
+  }
+  100% {
+    text-shadow: 0 5px 15px rgba(0, 210, 255, 0.3);
+    opacity: 0.9;
+  }
+}
+/*Hero Section */
+.hero {
+  .portfolio-title {
+    background: linear-gradient(135deg, #008080 0%, #00ffc2 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    // text-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
+    // animation: text-pulse 3s ease-in-out infinite;
+    font-weight: bold;
+    font-size: 6rem;
+
+    @media (max-width: 992px) {
+      font-size: 5rem;
+    }
+    @media (max-width: 768px) {
+      font-size: 4rem;
+    }
+    @media (max-width: 576px) {
+      font-size: 3rem;
+    }
+  }
+  .sub-title {
+    font-size: 2rem;
+  }
+  .portfolio-description {
+    color: #888;
+  }
+}
